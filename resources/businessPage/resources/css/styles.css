@@ -1,0 +1,173 @@
+/* style sheet for business model */
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/resources/img/background.jpg");
+    color: #ffffff;
+    margin: 0;
+}
+
+main{
+    /* grid-template-rows: 200px 200px auto 200px;
+    grid-template-columns: repeat(12, 1fr); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 65px;
+}
+
+a{
+    color: white;
+}
+
+.navList{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 65px;
+    justify-content: space-around;
+    align-content: space-around;
+    z-index: 1;
+}
+
+.navDiv{
+    margin: auto;
+}
+
+#banner{
+    /* height: 200px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo{
+    width: 25%;
+    height: 200px;
+}
+
+#logo img{
+    height: 100%;
+}
+
+#bannerContent{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+#mission{
+    font-size: 1.5rem;
+}
+
+#mission h3{
+    text-align: center;
+}
+
+#products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#staff{
+    background: linear-gradient(black, grey, black);
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#staffTitle{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+}
+
+#company{
+    font-family: 'Creepster', cursive;
+    font-size: 6rem;
+}
+
+#sidenote{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(77, 76, 76);
+}
+
+.product{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 450px;
+    padding: 15px;
+    background-color: rgba(50,50,50, 1);
+}
+
+.imgContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.product img{
+    width: 100%;
+}
+
+.minion{
+    /* border: 1px solid white; */
+    width: 400px;
+    margin: 10px;
+}
+
+.minionImg{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.headshot{
+    width: 100%;
+}
+
+#prodTitle{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+    #banner{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+    /* ruleset for <= 400px */
+    
+    .product{
+        width: 300px;
+    }
+
+    .staff{
+        width: 300px;
+    }
+
+    .navList{
+        flex-direction: column;
+    }
+
+    #logo{
+        width: 200px;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    #bannerContent{
+        width: 100%;
+    }
+
+    #banner{
+        flex-direction: column;
+    }
+}
